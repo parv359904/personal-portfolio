@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Parvesh Kumar – CSE student, frontend developer, and aspiring software professional. Portfolio showcasing skills, education, certificates, and projects." />
-  <meta name="keywords" content="Parvesh Kumar, Portfolio, Frontend Developer, CSE Student, HTML, CSS, JavaScript, GitHub" />
+  <meta name="description" content="Parvesh Kumar — Software Developer and AI Product Builder. Explore MindSync AI, Camp Nexus, Nexwear, and projects in full-stack development, AI-assisted products, and software engineering." />
+  <meta name="keywords" content="Parvesh Kumar, Software Developer, AI Product Builder, Full Stack Developer, MindSync AI, Camp Nexus, Nexwear, Python, Flask, FastAPI, React, JavaScript, Portfolio" />
   <meta name="author" content="Parvesh Kumar" />
   <meta property="og:title" content="Parvesh Kumar | Portfolio" />
-  <meta property="og:description" content="Portfolio of Parvesh Kumar – CSE Student, Frontend Developer, and aspiring software professional." />
-  <title>Parvesh Kumar | Portfolio</title>
+  <meta property="og:description" content="Software Developer and AI Product Builder building practical digital products across AI, web development, and entrepreneurship." />
+  <meta name="theme-color" content="#050816" />
+  <meta property="og:type" content="website" />
+  <title>Parvesh Kumar | Software Developer & AI Product Builder</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -1095,7 +1097,7 @@
 
     @media (max-width: 768px) {
       .nav-links { display: none; }
-      .hamburger { display: flex; }
+      .hamburger { display: flex; background: transparent; border: 0; padding: 8px; }
       .about-highlights { grid-template-columns: 1fr; }
       .projects-grid,
       .cert-grid,
@@ -1125,6 +1127,16 @@
       .hero-name {
         letter-spacing: -1px;
       }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
     }
 
     .about-visual {
@@ -1193,11 +1205,11 @@
       <li><a href="https://drive.google.com/file/d/1t04kA5gA4Vh7HMFeIeTOKaLeL3OE2rGd/view?usp=drive_link" class="nav-cta">Resume</a></li>
     </ul>
 
-    <div class="hamburger" id="hamburger" tabindex="0" role="button" aria-label="Toggle Navigation">
+    <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
   </nav>
 
   <div class="mobile-nav" id="mobileNav">
@@ -1214,7 +1226,7 @@
 
     <section id="hero">
       <div class="hero-content">
-        <div class="hero-badge reveal">Open to internships & growth opportunities</div>
+        <div class="hero-badge reveal">SOFTWARE DEVELOPER · AI PRODUCT BUILDER · OPEN TO OPPORTUNITIES</div>
 
         <h1 class="hero-name reveal reveal-delay-1">
           Hi, I'm<br>
@@ -1227,7 +1239,7 @@
         </div>
 
         <p class="hero-bio reveal reveal-delay-3">
-          A B.Tech Computer Science Engineering student focused on frontend development, responsive web interfaces, and practical software solutions. I’m building my professional journey with strong communication, teamwork, and technical problem-solving skills.
+          I’m a final-year Computer Science Engineering student, software developer, and emerging product builder. I turn ideas into working digital products — from AI-assisted mental-health screening with MindSync to learning initiatives through Camp Nexus and retail workflows with Nexwear. I enjoy connecting user needs, thoughtful interfaces, and practical engineering.
         </p>
 
         <div class="hero-actions reveal reveal-delay-4">
@@ -1238,8 +1250,8 @@
 
         <div class="hero-stats reveal reveal-delay-4">
           <div>
-            <div class="stat-number" data-target="5">0</div>
-            <div class="stat-label">Projects Listed</div>
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label">Portfolio Projects</div>
           </div>
           <div>
             <div class="stat-number" data-target="2023">0</div>
@@ -1247,11 +1259,11 @@
           </div>
           <div>
             <div class="stat-number" data-target="3">0</div>
-            <div class="stat-label">Communication npLanguages</div>
+            <div class="stat-label">Languages</div>
           </div>
           <div>
-            <div class="stat-number" data-target="5">0</div>
-            <div class="stat-label">Core Web Skills</div>
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Products / Initiatives</div>
           </div>
         </div>
       </div>
@@ -1259,8 +1271,8 @@
       <div class="hero-floating-tag" aria-hidden="true">
         <div style="margin-bottom: 0.35rem; opacity: 0.65;">// profile.json</div>
         <div><span class="tag-key">"name"</span>: <span class="tag-val">"Parvesh Kumar"</span>,</div>
-        <div><span class="tag-key">"role"</span>: <span class="tag-val">"CSE Student"</span>,</div>
-        <div><span class="tag-key">"focus"</span>: <span class="tag-line">"Frontend Development & Testing  "</span>,</div>
+        <div><span class="tag-key">"role"</span>: <span class="tag-val">"Software Developer"</span>,</div>
+        <div><span class="tag-key">"focus"</span>: <span class="tag-line">"AI · Full-Stack · Product Building"</span>,</div>
         <div><span class="tag-key">"status"</span>: <span class="tag-line">"learning & building"</span></div>
       </div>
     </section>
@@ -1273,13 +1285,13 @@
       <div class="about-grid">
         <div class="about-text reveal reveal-delay-1">
           <p>
-            I'm <strong style="color: var(--text-primary);">Parvesh Kumar</strong>, a Bachelor of Technology student in <strong style="color: var(--text-primary);">Computer Science Engineering</strong> at Aryan College of Engineering, Rajpura. I am currently focused on building a strong foundation in web development and software problem-solving. 
+            I'm <strong style="color: var(--text-primary);">Parvesh Kumar</strong>, a final-year <strong style="color: var(--text-primary);">B.Tech Computer Science Engineering</strong> student at Aryan College of Engineering, Rajpura, affiliated with I.K. Gujral Punjab Technical University. My interests span software engineering, AI-enabled applications, full-stack development, and building products that solve practical problems.
           </p>
           <p>
-            My current strengths include HTML, CSS, JavaScript, responsive design, frontend frameworks like Bootstrap and Tailwind CSS, and version control using Git and GitHub. I enjoy turning ideas into functional and user-friendly web pages. 
+            I have worked with JavaScript, React, Python, Flask, FastAPI, HTML, CSS, Bootstrap, Git, and data-backed application workflows. My hands-on work includes authentication, API development, dashboards, assessment flows, PDF generation, and JSON/MongoDB-backed services.
           </p>
           <p>
-            Along with technical growth, I value communication, collaboration, adaptability, and attention to detail. I want to begin my career with an organization where I can apply my knowledge to real business challenges and grow through practical experience.
+            Beyond coding, I’m building <strong style="color: var(--text-primary);">MindSync</strong>, an AI-assisted mental-health screening platform, and <strong style="color: var(--text-primary);">Camp Nexus</strong>, a learning and training initiative. I value ownership, clear communication, iterative problem-solving, and responsible technology. I’m open to software development internships, entry-level opportunities, and meaningful collaborations.
           </p>
 
           <div class="about-highlights">
@@ -1291,8 +1303,8 @@
 
             <div class="highlight-item glass-card reveal reveal-delay-1">
               <div class="highlight-icon">🌐</div>
-              <div class="highlight-title">Frontend Focus</div>
-              <div class="highlight-desc">HTML · CSS · JavaScript</div>
+              <div class="highlight-title">Product Development</div>
+              <div class="highlight-desc">AI · Web Apps · Backend APIs</div>
             </div>
 
             <div class="highlight-item glass-card reveal reveal-delay-2">
@@ -1303,8 +1315,8 @@
 
             <div class="highlight-item glass-card reveal reveal-delay-3">
               <div class="highlight-icon">🚀</div>
-              <div class="highlight-title">Open to Growth</div>
-              <div class="highlight-desc">Internships & practical roles</div>
+              <div class="highlight-title">Builder Mindset</div>
+              <div class="highlight-desc">MindSync · Camp Nexus · Nexwear</div>
             </div>
           </div>
         </div>
@@ -1324,9 +1336,9 @@
   </div>
 
   <div class="about-chips">
-    <div class="about-chip">💻 Frontend Dev</div>
-    <div class="about-chip">📘 CSE Student</div>
-    <div class="about-chip">⚙️ GitHub / Git</div>
+    <div class="about-chip">🤖 AI Product Builder</div>
+    <div class="about-chip">💻 Full-Stack Development</div>
+    <div class="about-chip">🚀 Founder / Builder</div>
   </div>
 </div>
     </section>
@@ -1337,102 +1349,50 @@
       <div class="section-divider reveal reveal-delay-2"></div>
 
       <div class="skills-container">
-
         <div class="skill-category glass-card reveal">
           <div class="skill-cat-header">
             <div class="skill-cat-icon" style="background:rgba(0,229,255,0.08);border:1px solid rgba(0,229,255,0.12);">⌨️</div>
-            <span class="skill-cat-title">Frontend Skills</span>
-            <span class="skill-cat-count">5 skills</span>
+            <span class="skill-cat-title">Languages & Frontend</span>
           </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">HTML5</span><span class="skill-pct">90%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90" style="background:linear-gradient(90deg,#00e5ff,#00ff88);"></div></div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">CSS3</span><span class="skill-pct">85%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85" style="background:linear-gradient(90deg,#00ff88,#00ccaa);"></div></div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">JavaScript</span><span class="skill-pct">75%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75" style="background:linear-gradient(90deg,#ffe55e,#ffb800);"></div></div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">Responsive Web Design</span><span class="skill-pct">82%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82" style="background:linear-gradient(90deg,#9b6dff,#00e5ff);"></div></div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">Bootstrap / Tailwind</span><span class="skill-pct">72%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72" style="background:linear-gradient(90deg,#ff7a45,#ffb36b);"></div></div>
+          <div class="tools-grid">
+            <span class="tool-tag">Python</span><span class="tool-tag">JavaScript</span>
+            <span class="tool-tag">HTML5</span><span class="tool-tag">CSS3</span>
+            <span class="tool-tag">React</span><span class="tool-tag">Bootstrap</span>
+            <span class="tool-tag">Responsive UI</span>
           </div>
         </div>
 
         <div class="skill-category glass-card reveal reveal-delay-1">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon" style="background:rgba(0,255,136,0.08);border:1px solid rgba(0,255,136,0.12);">🛠️</div>
-            <span class="skill-cat-title">Tools & Workflow</span>
-            <span class="skill-cat-count">5 tools</span>
+            <div class="skill-cat-icon" style="background:rgba(0,255,136,0.08);border:1px solid rgba(0,255,136,0.12);">⚙️</div>
+            <span class="skill-cat-title">Backend & Data</span>
           </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">Git</span><span class="skill-pct">70%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70" style="background:linear-gradient(90deg,#00ff88,#00e5ff);"></div></div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">GitHub</span><span class="skill-pct">78%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78" style="background:linear-gradient(90deg,#00e5ff,#009dff);"></div></div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">Debugging</span><span class="skill-pct">68%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="68" style="background:linear-gradient(90deg,#9b6dff,#7c4cff);"></div></div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">Basic UI/UX Principles</span><span class="skill-pct">72%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72" style="background:linear-gradient(90deg,#00e5ff,#00ff88);"></div></div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-bar-header"><span class="skill-name">Browser Dev Tools</span><span class="skill-pct">74%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="74" style="background:linear-gradient(90deg,#ff7a45,#ffcf5d);"></div></div>
+          <div class="tools-grid">
+            <span class="tool-tag">Flask</span><span class="tool-tag">FastAPI</span>
+            <span class="tool-tag">REST APIs</span><span class="tool-tag">MongoDB</span>
+            <span class="tool-tag">JSON Data Storage</span><span class="tool-tag">Authentication</span>
+            <span class="tool-tag">PDF Generation</span>
           </div>
         </div>
 
         <div class="skill-category glass-card reveal reveal-delay-2">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon" style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.12);">🤝</div>
-            <span class="skill-cat-title">Professional Skills</span>
-            <span class="skill-cat-count">core strengths</span>
+            <div class="skill-cat-icon" style="background:rgba(155,109,255,0.08);border:1px solid rgba(155,109,255,0.12);">🛠️</div>
+            <span class="skill-cat-title">Tools & Professional Skills</span>
           </div>
-
           <div class="tools-grid">
-            <span class="tool-tag">Effective Communication</span>
-            <span class="tool-tag">Presentation</span>
-            <span class="tool-tag">Team Collaboration</span>
-            <span class="tool-tag">Client Handling</span>
-            <span class="tool-tag">Adaptability</span>
-            <span class="tool-tag">Quick Learning</span>
-            <span class="tool-tag">Strategic Planning</span>
-            <span class="tool-tag">Attention to Detail</span>
-            <span class="tool-tag">Decision-Making</span>
+            <span class="tool-tag">Git</span><span class="tool-tag">GitHub</span>
+            <span class="tool-tag">VS Code</span><span class="tool-tag">Vercel</span>
+            <span class="tool-tag">Debugging</span><span class="tool-tag">UI/UX Fundamentals</span>
+            <span class="tool-tag">Communication</span><span class="tool-tag">Presentation</span>
+            <span class="tool-tag">Team Collaboration</span><span class="tool-tag">Problem-Solving</span>
+            <span class="tool-tag">Adaptability</span><span class="tool-tag">Project Coordination</span>
           </div>
-
           <div style="margin-top:1.35rem;">
             <div class="skill-name" style="margin-bottom:0.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Languages</div>
-            <div class="tools-grid">
-              <span class="tool-tag">English</span>
-              <span class="tool-tag">Hindi</span>
-              <span class="tool-tag">Punjabi</span>
-            </div>
+            <div class="tools-grid"><span class="tool-tag">English</span><span class="tool-tag">Hindi</span><span class="tool-tag">Punjabi</span></div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -1445,27 +1405,34 @@
 
         <div class="project-card glass-card reveal">
           <div class="project-header">
-            <div class="project-number">PROJECT — beta </div>
-            <h3 class="project-title">Mindsync-ai</h3>
+            <div class="project-number">FLAGSHIP PRODUCT · WORKING BETA</div>
+            <h3 class="project-title">MindSync AI</h3>
             <p class="project-desc">
-              A web application currently in progress, An advanced psychiatric triage system developed for early detection of clinical distress using heuristic inference models.
+              An AI-assisted mental-health screening and self-reflection platform designed to help users understand screening results and identify when professional support may be appropriate. MindSync is a screening-support tool, not a clinical diagnosis or a replacement for a qualified professional.
             </p>
           </div>
           <div class="project-body">
             <ul class="project-features">
-              <li>Portfolio-based ai screening major project under development</li>
-              <li>Designed to showcase practical web based screening for mental health</li>
-              <li>Included authentication, listings, dashboard, or user flows later</li>
-              <li>Strong section to expand once development is complete</li>
+              <li>Structured screening modules including PHQ-9, GAD-7, PSS-10 and Y-BOCS</li>
+              <li>Account flows, assessment journeys, results and evaluation reporting</li>
+              <li>FastAPI backend with MongoDB-backed application services</li>
+              <li>Multilingual interface and downloadable assessment reports</li>
+              <li>Early-access and feedback workflow for product evaluation</li>
             </ul>
             <div class="project-tech">
-              <span class="tech-badge">HTML, Python </span>
-              <span class="tech-badge">CSS, js </span>
-              <span class="tech-badge">json, node js</span>
-              <span class="tech-badge">Future Ready</span>
+              <span class="tech-badge">React</span><span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Python</span><span class="tech-badge">FastAPI</span>
+              <span class="tech-badge">MongoDB</span><span class="tech-badge">Vercel</span>
             </div>
           </div>
           <div class="project-footer">
+            <a href="https://mindsync-ai-orpin.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Explore MindSync ↗</a>
+            <a href="https://mindsync-ai-orpin.vercel.app/early-access" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Early Access</a>
+            <a href="https://drive.google.com/file/d/1sm7v9eC3oI-3pOtNxDLyfD8D-gyO2MOR/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Demo Video</a>
+          </div>
+        </div>
+
+        <div class="project-footer">
             <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">In Progress (Demo Available below)</a>
             <a href="https://drive.google.com/file/d/1sm7v9eC3oI-3pOtNxDLyfD8D-gyO2MOR/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Demo Video</a>
           </div>
@@ -1477,26 +1444,52 @@
             <div class="project-number">PROJECT — 01</div>
             <h3 class="project-title">CampNexus</h3>
             <p class="project-desc">
-              A web application currently in progress, planned as a more complete platform-style project where multiple frontend and functional features can be integrated together.
+              A learning and training initiative focused on helping students explore technology, marketing, and management through practical, project-oriented experiences.
             </p>
           </div>
           <div class="project-body">
             <ul class="project-features">
-              <li>Portfolio-grade major project under development</li>
-              <li>Designed to showcase practical web application structure</li>
-              <li>Can include authentication, listings, dashboard, or user flows later</li>
-              <li>Strong section to expand once development is complete</li>
+              <li>Student-focused learning, training, and virtual internship initiative</li>
+              <li>Project-based exposure designed around practical skills</li>
+              <li>Digital presence and information flow for learners</li>
+              <li>Built around community, opportunity discovery, and development</li>
             </ul>
             <div class="project-tech">
               <span class="tech-badge">HTML</span>
               <span class="tech-badge">CSS</span>
               <span class="tech-badge">JavaScript</span>
-              <span class="tech-badge">Future Ready</span>
+              <span class="tech-badge">Education Initiative</span>
             </div>
           </div>
           <div class="project-footer">
             <a href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub</a>
             <a href="https://campnexus-in.vercel.app/nexus.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-header">
+            <div class="project-number">PRODUCT CONCEPT · RETAIL TECHNOLOGY</div>
+            <h3 class="project-title">Nexwear Retail POS</h3>
+            <p class="project-desc">
+              A retail operations application concept focused on bringing product inventory, point-of-sale workflows, and order records into one practical interface for a clothing business.
+            </p>
+          </div>
+          <div class="project-body">
+            <ul class="project-features">
+              <li>Product and inventory management workflows</li>
+              <li>POS-oriented sales and order handling</li>
+              <li>Product search, categories, and stock visibility</li>
+              <li>Invoice generation and structured data storage</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span><span class="tech-badge">Flask</span>
+              <span class="tech-badge">JavaScript</span><span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">JSON</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub Profile</a>
           </div>
         </div>
 
@@ -1532,15 +1525,15 @@
             <div class="project-number">PROJECT — 03</div>
             <h3 class="project-title">Temperature Converter</h3>
             <p class="project-desc">
-              A clean frontend utility project used to convert temperature values between different units while practicing form logic and responsive UI design. 
+              A frontend recreation exercise focused on translating an existing website's visual structure into a responsive interface. 
             </p>
           </div>
           <div class="project-body">
             <ul class="project-features">
-              <li>Fast conversion between temperature units</li>
-              <li>Simple UI with practical user utility</li>
-              <li>Good example of JavaScript function-based logic</li>
-              <li>Suitable as a mini portfolio project</li>
+              <li>Practice in layout recreation and visual hierarchy</li>
+              <li>Responsive page structure and styling</li>
+              <li>Reusable interface sections</li>
+              <li>Frontend implementation practice</li>
             </ul>
             <div class="project-tech">
               <span class="tech-badge">HTML</span>
@@ -1614,8 +1607,8 @@
       </div>
 
       <div class="extra-project-note reveal reveal-delay-4">
-        <strong style="color: var(--text-primary);">Extra project section kept ready:</strong>
-        You can easily duplicate any project card above and add future projects like portfolio website, to-do app, calculator, landing page, blog UI, admin dashboard, or internship work samples.
+        <strong style="color: var(--text-primary);">More work:</strong>
+        Explore my GitHub profile for additional experiments, source code, and projects as they are published.
       </div>
     </section>
 
@@ -1639,7 +1632,7 @@
             <span class="timeline-tag">💻 Current Degree</span>
           </div>
           <p class="timeline-text">
-            Currently pursuing B.Tech in Computer Science Engineering with focus on technical skills, problem-solving, and practical software development exposure. 
+            Final-year B.Tech Computer Science Engineering student, developing practical skills through independent product work, academic projects, and hands-on software development. 
           </p>
         </div>
       </div>
@@ -1721,9 +1714,9 @@
         <div class="cert-card glass-card reveal reveal-delay-3">
           <div class="cert-icon">🧠</div>
           <div class="cert-name">Software-Development Internship</div>
-          <div class="cert-name">Duration: 1 month (1st October, 2025 to 31st October, 2026) </div>
+          <div class="cert-name">Duration: 1 month (1 October 2025 – 31 October 2025) </div>
           <div class="cert-platform">Prodigy InfoTech</div>
-          <div class="cert-note">1 month internship on web development from Prodigy InfoTech where i worked on certein projects like crud,logic building/calculations in conversion logics,etc</div>
+          <div class="cert-note">Completed a one-month software-development internship involving practical web-development tasks, CRUD workflows, and JavaScript logic-building exercises.</div>
         <a href="https://mail.google.com/mail/u/2?ui=2&ik=6949b7f4f9&attid=0.1&permmsgid=msg-f:1849696340743177577&th=19ab710594564569&view=att&zw&disp=inline" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate</a>
         </div>
 
@@ -1735,7 +1728,7 @@
           <div class="cert-name"> Python Programming Internship </div>
           <div class="cert-name">Duration: 1 month (1st March, 2025 to 31st March, 2025) </div>
           <div class="cert-platform">Codsoft</div>
-          <div class="cert-note">1 month internship on python development from Codsoft where i worked on python projects like crud,logic building/randomfuction /calculations in conversion logics,etc</div>
+          <div class="cert-note">Completed a one-month Python programming internship involving foundational programming exercises, data handling, and logic-building projects.</div>
           <a href="https://alishajabeen67-dot-elite-magpie-462511-c4.uc.r.appspot.com/?c=18Rqab4INtAVD6k5ZKOgt7iaxfcTaivaudCGSbspUaUA&q=82281577&r=19d548cfb41d3090&z=1775240018861&o=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1UC8Z2g9T6M7_ObYFYPKed_kvnH4w_UEb%2Fview%3Fusp%3Ddrivesdk" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate</a>
         </div>
 
@@ -1751,7 +1744,7 @@
         <div class="contact-info reveal reveal-delay-1">
           <h3>Open to learning,<br>projects and opportunities.</h3>
           <p>
-            Whether it is an internship, freelance task, collaboration, or a professional connection, I would be glad to connect and discuss opportunities.
+            I’m interested in software development opportunities, internships, product collaborations, and conversations with people building useful technology. The form opens a pre-filled WhatsApp message so your enquiry can reach me directly.
           </p>
 
           <div class="contact-links">
@@ -1825,8 +1818,9 @@
           </div>
 
           <button type="button" class="btn btn-primary" onclick="sendToWhatsApp()">
-  Send Message →
+  Send via WhatsApp →
 </button>
+          <p class="cert-note">Your message will open in WhatsApp for you to review and send.</p>
         </form>
       </div>
     </section>
@@ -1840,6 +1834,7 @@
       <a href="mailto:parveshloona1231@gmail.com" class="social-btn" aria-label="Email">📧</a>
       <a href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">💻</a>
       <a href="https://www.linkedin.com/in/parvesh-kumar-4322901b7" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">💼</a>
+      <a href="https://mindsync-ai-orpin.vercel.app/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="MindSync AI">✦</a>
     </div>
   </footer>
 
@@ -1935,11 +1930,11 @@
 
     (function() {
       const texts = [
-        'responsive web pages',
-        'frontend interfaces',
-        'student projects',
-        'practical solutions',
-        'clean UI experiences'
+        'AI-enabled products',
+        'full-stack applications',
+        'useful digital experiences',
+        'practical software solutions',
+        'ideas into working products' 
       ];
       let idx = 0, charIdx = 0, deleting = false;
       const el = document.getElementById('typed-text');
@@ -2034,7 +2029,7 @@
 
         const scrollTop = window.scrollY;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        bar.style.width = (scrollTop / docHeight * 100) + '%';
+        bar.style.width = (docHeight > 0 ? (scrollTop / docHeight * 100) : 0) + '%';
       });
     })();
 
@@ -2042,15 +2037,9 @@
     const mobileNav = document.getElementById('mobileNav');
 
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      mobileNav.classList.toggle('open');
-    });
-
-    hamburger.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        hamburger.click();
-      }
+      const isOpen = hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
     });
     
     function sendToWhatsApp() {
@@ -2096,6 +2085,7 @@ ${fullName}`;
     function closeMobileNav() {
       hamburger.classList.remove('open');
       mobileNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
     }
 
     window.closeMobileNav = closeMobileNav;
