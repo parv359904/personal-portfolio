@@ -3,159 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Parvesh Kumar — Software Developer and AI Product Builder. Selected work across AI-assisted applications, web development, and digital products.">
-  <meta name="keywords" content="Parvesh Kumar, Software Developer, AI Product Builder, MindSync AI, Camp Nexus, Python, React, FastAPI, Flask">
+  <meta name="description" content="Parvesh Kumar — Software Developer and AI Product Builder. Explore MindSync AI, Camp Nexus, software projects, technical interests and professional experience.">
+  <meta name="keywords" content="Parvesh Kumar, Software Developer, AI Product Builder, MindSync AI, Camp Nexus, Python, React, FastAPI, Flask, portfolio">
   <meta name="author" content="Parvesh Kumar">
-  <meta name="theme-color" content="#f7f8fa">
-  <meta property="og:title" content="Parvesh Kumar | Software Developer">
-  <meta property="og:description" content="Software developer and product builder exploring AI, full-stack development, and practical digital products.">
+  <meta name="theme-color" content="#101b2d">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Parvesh Kumar — Software Developer & AI Product Builder">
+  <meta property="og:description" content="Building thoughtful software and AI-enabled products. Explore selected work, experience and ways to connect.">
   <title>Parvesh Kumar | Software Developer & AI Product Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #f7f8fa; --surface: #ffffff; --surface-soft: #f0f3f6;
-      --ink: #17212b; --muted: #5f6b76; --line: #e3e8ed;
-      --accent: #176b58; --accent-dark: #105443; --accent-soft: #e7f3ef;
-      --blue: #315c86; --radius: 18px; --shadow: 0 12px 36px rgba(24,39,52,.06);
-      --max: 1080px;
+    :root{
+      --navy:#101b2d;--navy2:#17263c;--ink:#172334;--muted:#667386;--muted2:#8c98a8;
+      --paper:#f5f6f8;--white:#fff;--line:#e4e8ee;--green:#18745f;--green2:#dff1e9;
+      --gold:#d6a85c;--blue:#dce8f6;--shadow:0 18px 55px rgba(16,27,45,.09);
+      --radius:20px;--max:1160px;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
-    body { margin: 0; background: var(--bg); color: var(--ink); font-family: "DM Sans", sans-serif; line-height: 1.65; }
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-    .container { width: min(var(--max), calc(100% - 44px)); margin: 0 auto; }
-    .topbar { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
-    .nav { min-height: 70px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-    .brand { font-family: Manrope, sans-serif; font-weight:800; font-size:1.15rem; letter-spacing:-.04em; }
-    .brand span { color:var(--accent); }
-    .nav-links { display:flex; align-items:center; gap:26px; color:var(--muted); font-size:.9rem; }
-    .nav-links a:hover { color:var(--accent); }
-    .nav-actions { display:flex; align-items:center; gap:10px; }
-    .menu-btn { display:none; border:1px solid var(--line); background:white; border-radius:10px; padding:9px 12px; font:inherit; }
-    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:10px; padding:11px 17px; font-size:.9rem; font-weight:700; border:1px solid transparent; transition:.2s ease; cursor:pointer; }
-    .btn-primary { background:var(--accent); color:white; }
-    .btn-primary:hover { background:var(--accent-dark); transform:translateY(-1px); }
-    .btn-secondary { background:white; color:var(--ink); border-color:var(--line); }
-    .btn-secondary:hover { border-color:#b9c9c3; color:var(--accent); }
-    .btn-small { padding:8px 12px; font-size:.82rem; }
-    .hero { padding:94px 0 72px; }
-    .hero-grid { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr); gap:56px; align-items:center; }
-    .eyebrow { display:inline-flex; align-items:center; gap:9px; color:var(--accent); font-size:.78rem; font-weight:700; letter-spacing:.11em; text-transform:uppercase; }
-    .eyebrow:before { content:""; width:22px; height:2px; background:var(--accent); }
-    h1,h2,h3 { font-family:Manrope, sans-serif; letter-spacing:-.045em; line-height:1.16; }
-    h1 { font-size:clamp(2.7rem,6vw,4.7rem); margin:20px 0 14px; max-width:760px; }
-    h1 span { color:var(--accent); }
-    .hero-role { font-size:1.17rem; font-weight:700; color:#354451; margin:0 0 14px; }
-    .hero-copy { max-width:690px; color:var(--muted); font-size:1.04rem; margin:0; }
-    .hero-actions { display:flex; flex-wrap:wrap; gap:11px; margin-top:28px; }
-    .hero-meta { display:flex; flex-wrap:wrap; gap:18px; margin-top:28px; color:var(--muted); font-size:.88rem; }
-    .hero-meta span { display:flex; align-items:center; gap:7px; }
-    .profile-panel { background:var(--surface); border:1px solid var(--line); border-radius:22px; padding:26px; box-shadow:var(--shadow); }
-    .avatar { width:104px; height:104px; border-radius:50%; overflow:hidden; background:var(--accent-soft); border:4px solid white; box-shadow:0 0 0 1px var(--line); margin-bottom:18px; }
-    .avatar img { width:100%; height:100%; object-fit:cover; }
-    .profile-panel h3 { font-size:1.15rem; margin:0 0 4px; }
-    .profile-panel p { color:var(--muted); margin:0; font-size:.9rem; }
-    .profile-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:18px; }
-    .tag { background:var(--surface-soft); border:1px solid var(--line); color:#42515d; padding:6px 9px; border-radius:7px; font-size:.76rem; font-weight:600; }
-    section.content-section { padding:64px 0; border-top:1px solid var(--line); }
-    .section-head { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:28px; }
-    .section-kicker { color:var(--accent); font-size:.76rem; font-weight:800; text-transform:uppercase; letter-spacing:.12em; }
-    h2 { font-size:clamp(1.8rem,3vw,2.45rem); margin:7px 0 0; }
-    .section-intro { max-width:520px; color:var(--muted); margin:0; font-size:.94rem; }
-    .about-grid { display:grid; grid-template-columns:1.3fr .7fr; gap:26px; }
-    .panel { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:25px; box-shadow:0 5px 18px rgba(24,39,52,.025); }
-    .panel p { color:var(--muted); margin:0 0 13px; }
-    .panel p:last-child { margin-bottom:0; }
-    .fact-list { display:grid; gap:15px; }
-    .fact { border-bottom:1px solid var(--line); padding-bottom:13px; }
-    .fact:last-child { border:0; padding:0; }
-    .fact small { display:block; color:var(--muted); font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; }
-    .fact strong { display:block; margin-top:3px; font-size:.95rem; }
-    .skills-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-    .skill-box h3 { font-size:1rem; margin:0 0 14px; }
-    .skill-box .profile-tags { margin-top:0; }
-    .projects-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-    .project { display:flex; flex-direction:column; min-height:100%; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
-    .project:hover { transform:translateY(-3px); box-shadow:var(--shadow); border-color:#c9d9d3; }
-    .project-main { padding:24px 24px 16px; flex:1; }
-    .project-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:14px; }
-    .project-type { color:var(--accent); font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
-    .status { color:#52616d; background:var(--surface-soft); padding:5px 8px; border-radius:6px; font-size:.7rem; font-weight:700; }
-    .project h3 { margin:0 0 10px; font-size:1.35rem; }
-    .project p { color:var(--muted); margin:0; font-size:.91rem; }
-    .project ul { padding-left:18px; margin:16px 0 0; color:#4e5c67; font-size:.86rem; }
-    .project li { margin:5px 0; }
-    .project .profile-tags { margin-top:17px; }
-    .project-footer { display:flex; flex-wrap:wrap; gap:8px; border-top:1px solid var(--line); padding:15px 24px; background:#fcfdfd; }
-    .timeline { display:grid; gap:14px; }
-    .timeline-item { display:grid; grid-template-columns:150px 1fr; gap:22px; padding:22px 24px; background:var(--surface); border:1px solid var(--line); border-radius:15px; }
-    .timeline-date { color:var(--accent); font-size:.82rem; font-weight:800; }
-    .timeline-item h3 { font-size:1.02rem; margin:0 0 4px; letter-spacing:-.02em; }
-    .timeline-item p { color:var(--muted); margin:0; font-size:.88rem; }
-    .timeline-item .sub { color:#354451; font-weight:600; margin-bottom:8px; }
-    .cert-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
-    .cert { padding:19px 21px; background:var(--surface); border:1px solid var(--line); border-radius:14px; }
-    .cert h3 { font-size:1rem; margin:0 0 4px; letter-spacing:-.02em; }
-    .cert p { color:var(--muted); margin:0; font-size:.86rem; }
-    .cert a { display:inline-block; margin-top:10px; color:var(--accent); font-size:.82rem; font-weight:700; }
-    .contact-box { display:grid; grid-template-columns:1fr auto; align-items:center; gap:25px; background:#edf4f1; border:1px solid #d8e7e1; border-radius:20px; padding:32px; }
-    .contact-box h2 { margin:0 0 9px; }
-    .contact-box p { color:var(--muted); margin:0; max-width:620px; }
-    .contact-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
-    footer { border-top:1px solid var(--line); padding:24px 0 34px; color:var(--muted); font-size:.82rem; }
-    .footer-inner { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-    .mobile-menu { display:none; }
-    :focus-visible { outline:3px solid rgba(23,107,88,.28); outline-offset:3px; }
-    @media (max-width:850px) {
-      .hero-grid,.about-grid { grid-template-columns:1fr; }
-      .profile-panel { max-width:440px; }
-      .skills-grid { grid-template-columns:repeat(2,1fr); }
-      .section-head { display:block; }
-      .section-intro { margin-top:10px; }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    button,a{-webkit-tap-highlight-color:transparent}
+    .container{width:min(var(--max),calc(100% - 44px));margin:auto}
+    .top-progress{height:3px;position:fixed;top:0;left:0;width:0;background:var(--gold);z-index:100}
+    .header{position:sticky;top:0;z-index:90;background:rgba(16,27,45,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.09)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{font:800 1.18rem Manrope,sans-serif;letter-spacing:-.05em;color:#fff}
+    .logo span{color:#8ed1b7}
+    .navlinks{display:flex;gap:27px;align-items:center;color:#c2cad5;font-size:.87rem}
+    .navlinks a:hover{color:#fff}
+    .navright{display:flex;align-items:center;gap:10px}
+    .menu{display:none;background:transparent;color:#fff;border:1px solid #425066;border-radius:10px;padding:8px 12px}
+    .mobile{display:none;padding:0 0 16px}
+    .mobile.open{display:grid}
+    .mobile a{color:#d6deea;padding:10px 0;border-top:1px solid rgba(255,255,255,.1)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:10px;padding:11px 17px;font-size:.88rem;font-weight:700;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-gold{background:var(--gold);color:#182235}
+    .btn-light{background:#fff;color:var(--navy)}
+    .btn-outline{background:transparent;border-color:rgba(255,255,255,.25);color:#fff}
+    .btn-green{background:var(--green);color:#fff}
+    .btn-soft{background:#f0f3f6;border-color:var(--line);color:var(--ink)}
+    .btn-sm{padding:8px 12px;font-size:.8rem}
+    .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;right:-180px;top:-310px;background:radial-gradient(circle,rgba(51,133,111,.25),transparent 68%);pointer-events:none}
+    .hero:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;left:-240px;bottom:-290px;border:1px solid rgba(255,255,255,.08);pointer-events:none}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:65px;align-items:center;padding:92px 0 86px}
+    .overline{display:inline-flex;align-items:center;gap:10px;color:#9bd7c0;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:800}
+    .overline:before{content:"";width:27px;height:1px;background:var(--gold)}
+    h1,h2,h3,h4{font-family:Manrope,sans-serif;letter-spacing:-.045em;line-height:1.18}
+    h1{font-size:clamp(3rem,6vw,5.2rem);margin:20px 0 15px;max-width:760px}
+    h1 span{color:#8ed1b7}
+    .hero-title{font-size:1.2rem;color:#d9e0e9;font-weight:600;margin:0 0 14px}
+    .hero-copy{color:#aeb9c8;max-width:690px;font-size:1.02rem;margin:0}
+    .hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:29px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:19px;margin-top:27px;color:#aeb9c8;font-size:.84rem}
+    .hero-meta a:hover{color:#fff}
+    .profile-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:26px;box-shadow:0 20px 70px rgba(0,0,0,.16)}
+    .portrait{width:108px;height:108px;border-radius:22px;overflow:hidden;background:#263a51;border:1px solid rgba(255,255,255,.18);margin-bottom:19px}
+    .portrait img{width:100%;height:100%;object-fit:cover}
+    .profile-card h3{margin:0 0 4px;font-size:1.28rem;color:#fff}
+    .profile-card p{margin:0;color:#b9c5d3;font-size:.88rem}
+    .profile-label{font-size:.7rem;color:#9bd7c0;text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-top:21px}
+    .pillrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+    .pill{font-size:.74rem;padding:6px 9px;border-radius:7px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#e0e7ef}
+    .profile-social{display:flex;gap:8px;margin-top:20px}
+    .profile-social a{font-size:.8rem;color:#fff;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:3px}
+    .trust-strip{background:#fff;border-bottom:1px solid var(--line)}
+    .trust-inner{display:grid;grid-template-columns:repeat(4,1fr);padding:22px 0;gap:15px}
+    .trust-item{padding-left:17px;border-left:2px solid #d7e9e1}
+    .trust-item strong{display:block;font:700 1rem Manrope,sans-serif}
+    .trust-item span{font-size:.76rem;color:var(--muted)}
+    .section{padding:76px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}
+    .kicker{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--green)}
+    h2{font-size:clamp(2rem,3.6vw,2.8rem);margin:8px 0 0}
+    .intro{max-width:530px;color:var(--muted);font-size:.92rem;margin:0}
+    .about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}
+    .surface{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 6px 25px rgba(16,27,45,.035)}
+    .about-copy{padding:29px}
+    .about-copy p{color:#5f6c7d;margin:0 0 14px}
+    .about-copy p:last-child{margin:0}
+    .about-copy strong{color:var(--ink)}
+    .facts{padding:25px;display:grid;gap:17px}
+    .fact{padding-bottom:15px;border-bottom:1px solid var(--line)}
+    .fact:last-child{border:0;padding:0}
+    .fact small{display:block;color:var(--muted2);font-size:.69rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+    .fact strong{display:block;margin-top:4px;font-size:.9rem}
+    .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .skill{padding:22px}
+    .skill-head{display:flex;align-items:center;gap:11px;margin-bottom:15px}
+    .skill-icon{width:37px;height:37px;border-radius:10px;background:#e8f2ee;color:var(--green);display:grid;place-items:center;font-weight:800}
+    .skill h3{font-size:1rem;margin:0;letter-spacing:-.02em}
+    .skill p{color:var(--muted);font-size:.82rem;margin:0 0 13px}
+    .tag-list{display:flex;flex-wrap:wrap;gap:7px}
+    .tag{padding:6px 9px;border-radius:7px;background:#f1f4f6;border:1px solid #e7ebef;color:#425063;font-size:.74rem;font-weight:600}
+    .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .work{display:flex;flex-direction:column;overflow:hidden;min-height:100%;transition:.22s}
+    .work:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cbdad4}
+    .work-body{padding:25px 25px 18px;flex:1}
+    .work-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:15px}
+    .work-type{font-size:.69rem;color:var(--green);font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .badge{font-size:.68rem;color:#526276;background:#f0f3f6;border-radius:6px;padding:5px 8px;font-weight:700}
+    .work h3{font-size:1.45rem;margin:0 0 10px}
+    .work p{color:var(--muted);font-size:.89rem;margin:0}
+    .work ul{padding-left:18px;margin:15px 0 0;color:#536174;font-size:.83rem}
+    .work li{margin:6px 0}
+    .work-footer{display:flex;gap:8px;flex-wrap:wrap;padding:15px 24px;border-top:1px solid var(--line);background:#fbfcfd}
+    .work-feature{grid-column:span 2;display:grid;grid-template-columns:1.2fr .8fr}
+    .feature-aside{background:linear-gradient(145deg,#14243a,#1c3b4a);padding:28px;color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+    .feature-aside .mini-label{color:#9bd7c0;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .feature-aside h4{font-size:1.5rem;margin:14px 0 8px}
+    .feature-aside p{color:#c1ceda;font-size:.85rem}
+    .feature-aside .tag{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:#eaf0f6}
+    .timeline{display:grid;gap:13px}
+    .timeline-item{display:grid;grid-template-columns:155px 1fr;gap:20px;padding:22px 24px}
+    .timeline-date{font-size:.8rem;font-weight:800;color:var(--green)}
+    .timeline-item h3{font-size:1rem;margin:0 0 4px;letter-spacing:-.02em}
+    .timeline-item .sub{font-size:.85rem;font-weight:700;color:#3e4d5e;margin:0 0 7px}
+    .timeline-item p{font-size:.85rem;color:var(--muted);margin:0}
+    .timeline-item a{color:var(--green);font-weight:700}
+    .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+    .cert{padding:20px 22px}
+    .cert h3{font-size:.97rem;margin:0 0 5px;letter-spacing:-.02em}
+    .cert p{color:var(--muted);font-size:.83rem;margin:0}
+    .cert a{display:inline-block;margin-top:9px;color:var(--green);font-size:.8rem;font-weight:700}
+    .contact-section{background:var(--navy);color:#fff;border:0}
+    .contact-section .kicker{color:#9bd7c0}
+    .contact-section h2{color:#fff}
+    .contact-section .intro{color:#b4c0ce}
+    .contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:start}
+    .contact-info{padding:28px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius)}
+    .contact-info h3{font-size:1.4rem;margin:0 0 10px}
+    .contact-info p{color:#b9c5d3;font-size:.88rem;margin:0}
+    .contact-info .info-line{padding-top:18px;margin-top:18px;border-top:1px solid rgba(255,255,255,.13);font-size:.84rem;color:#dbe3ec}
+    .contact-info a{color:#9bd7c0}
+    .form-card{background:#fff;color:var(--ink);border-radius:var(--radius);padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.18)}
+    .form-heading{display:flex;justify-content:space-between;align-items:start;gap:15px;margin-bottom:20px}
+    .form-heading h3{font-size:1.35rem;margin:0}
+    .form-heading p{font-size:.8rem;color:var(--muted);margin:5px 0 0}
+    .form-step{font-size:.68rem;color:var(--green);background:#e9f4ef;border-radius:20px;padding:6px 10px;font-weight:800;white-space:nowrap}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .field{display:grid;gap:6px}
+    .field.full{grid-column:1/-1}
+    label{font-size:.77rem;font-weight:700;color:#354357}
+    select,input,textarea{width:100%;border:1px solid #dce2e8;border-radius:9px;background:#fbfcfd;padding:11px 12px;color:#263447;font-size:.86rem;outline:none;transition:border .2s,box-shadow .2s}
+    select:focus,input:focus,textarea:focus{border-color:#4c9b80;box-shadow:0 0 0 3px rgba(24,116,95,.12)}
+    select{appearance:auto}
+    .helper{font-size:.7rem;color:#8591a0}
+    .generated{margin-top:17px;border:1px solid #dce7e2;background:#f4f8f6;border-radius:12px;padding:14px}
+    .generated-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px}
+    .generated-head strong{font-size:.78rem;color:#315d4f}
+    .generated p{font-size:.8rem;color:#5c6c66;margin:0;white-space:pre-line;max-height:100px;overflow:auto}
+    .form-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+    .privacy{font-size:.7rem;color:#8994a2;margin:12px 0 0}
+    .toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#14243a;color:white;padding:11px 16px;border-radius:10px;font-size:.82rem;z-index:120;transition:.2s}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    footer{background:#0c1524;color:#9eabba;padding:24px 0;font-size:.8rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .footer-inner strong{color:#fff}
+    :focus-visible{outline:3px solid rgba(214,168,92,.55);outline-offset:3px}
+    @media(max-width:900px){
+      .hero-grid{gap:32px}.skill-grid{grid-template-columns:repeat(2,1fr)}
+      .contact-layout{grid-template-columns:1fr}.work-feature{grid-template-columns:1fr}
     }
-    @media (max-width:650px) {
-      .container { width:min(var(--max),calc(100% - 32px)); }
-      .nav-links,.nav-actions { display:none; }
-      .menu-btn { display:block; }
-      .mobile-menu.open { display:grid; gap:0; padding:4px 0 14px; }
-      .mobile-menu a { padding:11px 2px; color:var(--muted); border-top:1px solid var(--line); }
-      .hero { padding:62px 0 50px; }
-      .hero-grid { gap:32px; }
-      .skills-grid,.projects-grid,.cert-grid { grid-template-columns:1fr; }
-      section.content-section { padding:48px 0; }
-      .timeline-item { grid-template-columns:1fr; gap:6px; }
-      .contact-box { grid-template-columns:1fr; padding:24px; }
-      h1 { font-size:clamp(2.45rem,13vw,3.6rem); }
-      .hero-meta { gap:12px; }
+    @media(max-width:680px){
+      .container{width:calc(100% - 32px)}.nav{height:66px}.navlinks,.navright{display:none}.menu{display:block}
+      .hero-grid{grid-template-columns:1fr;padding:64px 0 55px}.profile-card{max-width:440px}
+      .trust-inner{grid-template-columns:repeat(2,1fr)}.section{padding:55px 0}
+      .section-head{display:block}.intro{margin-top:10px}.about-grid,.work-grid,.skill-grid,.cert-grid{grid-template-columns:1fr}
+      .work-feature{grid-column:auto}.timeline-item{grid-template-columns:1fr;gap:5px}
+      .form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}
+      .form-card{padding:21px}.form-heading{display:block}.form-step{display:inline-block;margin-top:10px}
+      h1{font-size:clamp(2.7rem,13vw,4rem)}
     }
-    @media (prefers-reduced-motion:reduce) {
-      *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; }
-    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
   </style>
 </head>
 <body>
-  <header class="topbar">
+  <div class="top-progress" id="progress"></div>
+  <header class="header">
     <div class="container">
       <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#home">Parvesh<span>.</span></a>
-        <div class="nav-links">
-          <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
-          <a href="#experience">Experience</a><a href="#contact">Contact</a>
+        <a class="logo" href="#home">PARVESH<span>.</span></a>
+        <div class="navlinks">
+          <a href="#about">About</a><a href="#skills">Expertise</a><a href="#work">Selected work</a>
+          <a href="#journey">Journey</a><a href="#contact">Contact</a>
         </div>
-        <div class="nav-actions">
-          <a class="btn btn-secondary btn-small" href="https://drive.google.com/file/d/1t04kA5gA4Vh7HMFeIeTOKaLeL3OE2rGd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume ↗</a>
-          <a class="btn btn-primary btn-small" href="mailto:parveshloona1231@gmail.com">Let’s talk</a>
+        <div class="navright">
+          <a class="btn btn-outline btn-sm" href="https://drive.google.com/file/d/1t04kA5gA4Vh7HMFeIeTOKaLeL3OE2rGd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View résumé ↗</a>
+          <a class="btn btn-gold btn-sm" href="#contact">Start a conversation</a>
         </div>
-        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
       </nav>
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
-        <a href="#experience">Experience</a><a href="#contact">Contact</a>
-        <a href="https://drive.google.com/file/d/1t04kA5gA4Vh7HMFeIeTOKaLeL3OE2rGd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+      <div class="mobile" id="mobileMenu">
+        <a href="#about">About</a><a href="#skills">Expertise</a><a href="#work">Selected work</a>
+        <a href="#journey">Journey</a><a href="#contact">Contact</a>
+        <a href="https://drive.google.com/file/d/1t04kA5gA4Vh7HMFeIeTOKaLeL3OE2rGd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View résumé ↗</a>
       </div>
     </div>
   </header>
@@ -164,235 +211,246 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">Software Developer · AI Product Builder</div>
-          <h1>Hi, I’m <span>Parvesh Kumar.</span></h1>
-          <p class="hero-role">I build practical digital products with code and curiosity.</p>
-          <p class="hero-copy">I’m a final-year Computer Science Engineering student interested in software development, AI-enabled applications, and product building. My work includes MindSync, Camp Nexus, and a retail technology concept — projects where I explore how technology can solve real user and business problems.</p>
+          <div class="overline">Software development · AI products · Entrepreneurship</div>
+          <h1>Ideas into<br><span>working products.</span></h1>
+          <p class="hero-title">I’m Parvesh Kumar — Software Developer & AI Product Builder.</p>
+          <p class="hero-copy">I’m a final-year Computer Science Engineering student who enjoys taking ideas from a rough concept to a usable digital product. My work spans AI-assisted applications, web development, backend workflows and initiatives built around learning and practical problem-solving.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Explore my work ↓</a>
-            <a class="btn btn-secondary" href="https://drive.google.com/file/d/1t04kA5gA4Vh7HMFeIeTOKaLeL3OE2rGd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View resume ↗</a>
+            <a class="btn btn-gold" href="#work">Explore selected work ↓</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/parvesh-kumar-4322901b7/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
           </div>
           <div class="hero-meta">
-            <span>⌖ Kathua, Jammu & Kashmir</span>
+            <span>⌖ Kathua, Jammu & Kashmir, India</span>
             <span>✉ <a href="mailto:parveshloona1231@gmail.com">parveshloona1231@gmail.com</a></span>
           </div>
         </div>
-        <aside class="profile-panel">
-          <div class="avatar"><img src="Screenshot 2026-03-16 164312.png" alt="Portrait of Parvesh Kumar" onerror="this.style.display='none'"></div>
+        <aside class="profile-card">
+          <div class="portrait"><img src="Screenshot 2026-03-16 164312.png" alt="Portrait of Parvesh Kumar" onerror="this.style.display='none'"></div>
           <h3>Parvesh Kumar</h3>
           <p>B.Tech · Computer Science Engineering</p>
-          <div class="profile-tags">
-            <span class="tag">AI applications</span><span class="tag">Full-stack</span>
-            <span class="tag">Python</span><span class="tag">React</span>
-            <span class="tag">Product thinking</span>
-          </div>
-          <div class="contact-links">
-            <a class="btn btn-secondary btn-small" href="https://www.linkedin.com/in/parvesh-kumar-4322901b7/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a class="btn btn-secondary btn-small" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
+          <div class="profile-label">Current focus</div>
+          <div class="pillrow"><span class="pill">AI-enabled products</span><span class="pill">Full-stack development</span><span class="pill">Product thinking</span></div>
+          <div class="profile-label">Across my toolkit</div>
+          <div class="pillrow"><span class="pill">Python</span><span class="pill">React</span><span class="pill">FastAPI</span><span class="pill">Flask</span></div>
+          <div class="profile-social"><a href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/parvesh-kumar-4322901b7/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
         </aside>
       </div>
     </section>
 
-    <section class="content-section" id="about">
+    <div class="trust-strip">
+      <div class="container trust-inner">
+        <div class="trust-item"><strong>AI & application development</strong><span>Building and iterating on real product flows</span></div>
+        <div class="trust-item"><strong>Frontend + backend</strong><span>Working across interfaces and services</span></div>
+        <div class="trust-item"><strong>Product mindset</strong><span>Connecting user needs with implementation</span></div>
+        <div class="trust-item"><strong>Open to opportunities</strong><span>Internships · roles · collaborations</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="about">
       <div class="container">
         <div class="section-head">
-          <div><div class="section-kicker">01 / About</div><h2>A little about me</h2></div>
-          <p class="section-intro">A developer in the making, learning by building and improving products through practical work.</p>
+          <div><div class="kicker">01 / The person behind the work</div><h2>Curiosity, ownership<br>and continuous building.</h2></div>
+          <p class="intro">I’m interested in technology not just as code, but as a way to make useful things possible — for people, teams and businesses.</p>
         </div>
         <div class="about-grid">
-          <div class="panel">
-            <p>I’m pursuing a B.Tech in Computer Science Engineering at Aryan College of Engineering, Rajpura, affiliated with I.K. Gujral Punjab Technical University. I enjoy working across frontend interfaces, backend services, application workflows, and early-stage product development.</p>
-            <p>My hands-on learning has involved React, JavaScript, Python, Flask, FastAPI, MongoDB, JSON-based data storage, and deployment workflows. I’m particularly interested in building useful applications, understanding how systems work end to end, and improving the experience for the people who use them.</p>
-            <p>Outside individual development, I’m also building initiatives around mental-health screening technology and student learning. I value ownership, clear communication, responsible technology, and steady iteration.</p>
+          <div class="surface about-copy">
+            <p>I’m <strong>Parvesh Kumar</strong>, pursuing a B.Tech in Computer Science Engineering at Aryan College of Engineering, Rajpura, affiliated with I.K. Gujral Punjab Technical University. My interests include software engineering, AI-enabled applications, full-stack development and product innovation.</p>
+            <p>My hands-on development work has involved React, JavaScript, Python, Flask, FastAPI, MongoDB, JSON-based data storage, authentication flows, APIs, dashboards and report generation. I learn by building, testing, debugging and refining features into complete user journeys.</p>
+            <p>Alongside development, I’m building <strong>MindSync</strong>, an AI-assisted mental-health screening platform, and <strong>Camp Nexus</strong>, a student learning and training initiative. I value clear communication, responsible technology, practical execution and honest iteration.</p>
           </div>
-          <div class="panel fact-list">
-            <div class="fact"><small>Education</small><strong>B.Tech, Computer Science Engineering</strong></div>
+          <div class="surface facts">
+            <div class="fact"><small>Education</small><strong>B.Tech · Computer Science Engineering</strong></div>
             <div class="fact"><small>Institution</small><strong>Aryan College of Engineering, Rajpura</strong></div>
-            <div class="fact"><small>Interests</small><strong>Software Engineering · AI · Product Development</strong></div>
-            <div class="fact"><small>Looking for</small><strong>Software internships, entry-level roles & collaborations</strong></div>
+            <div class="fact"><small>Primary interests</small><strong>Software · AI applications · Product development</strong></div>
+            <div class="fact"><small>Languages</small><strong>English · Hindi · Punjabi</strong></div>
+            <div class="fact"><small>Open to</small><strong>Internships · Entry-level roles · Collaborations</strong></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="skills">
+    <section class="section" id="skills">
       <div class="container">
         <div class="section-head">
-          <div><div class="section-kicker">02 / Skills</div><h2>Tools I work with</h2></div>
-          <p class="section-intro">Grouped by how I use them. This is a practical snapshot, not a percentage-based self-rating.</p>
+          <div><div class="kicker">02 / Technical toolkit</div><h2>Tools for turning ideas<br>into implementation.</h2></div>
+          <p class="intro">A practical snapshot of technologies and working areas used across my projects. No artificial skill percentages — the work is the evidence.</p>
         </div>
-        <div class="skills-grid">
-          <div class="panel skill-box"><h3>Languages & frontend</h3><div class="profile-tags">
-            <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">React</span><span class="tag">Bootstrap</span>
-          </div></div>
-          <div class="panel skill-box"><h3>Backend & data</h3><div class="profile-tags">
-            <span class="tag">Flask</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">MongoDB</span><span class="tag">JSON storage</span><span class="tag">Authentication</span>
-          </div></div>
-          <div class="panel skill-box"><h3>Tools & workflow</h3><div class="profile-tags">
-            <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Vercel</span><span class="tag">Debugging</span><span class="tag">PDF generation</span>
-          </div></div>
-          <div class="panel skill-box"><h3>Product & collaboration</h3><div class="profile-tags">
-            <span class="tag">Problem-solving</span><span class="tag">UI fundamentals</span><span class="tag">Communication</span><span class="tag">Teamwork</span><span class="tag">Planning</span>
-          </div></div>
-          <div class="panel skill-box"><h3>Languages</h3><div class="profile-tags">
-            <span class="tag">English</span><span class="tag">Hindi</span><span class="tag">Punjabi</span>
-          </div></div>
-          <div class="panel skill-box"><h3>Areas of interest</h3><div class="profile-tags">
-            <span class="tag">AI-assisted products</span><span class="tag">Full-stack apps</span><span class="tag">Mental-health technology</span><span class="tag">Retail systems</span>
-          </div></div>
+        <div class="skill-grid">
+          <article class="surface skill"><div class="skill-head"><div class="skill-icon">01</div><h3>Programming & frontend</h3></div><p>Building responsive interfaces and interactive user experiences.</p><div class="tag-list"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">React</span><span class="tag">Bootstrap</span></div></article>
+          <article class="surface skill"><div class="skill-head"><div class="skill-icon">02</div><h3>Backend & APIs</h3></div><p>Application logic, service endpoints and data-driven workflows.</p><div class="tag-list"><span class="tag">Flask</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">Authentication</span><span class="tag">JSON storage</span></div></article>
+          <article class="surface skill"><div class="skill-head"><div class="skill-icon">03</div><h3>Data & platforms</h3></div><p>Working with application data and deployment environments.</p><div class="tag-list"><span class="tag">MongoDB</span><span class="tag">Supabase exposure</span><span class="tag">Vercel</span><span class="tag">PDF generation</span></div></article>
+          <article class="surface skill"><div class="skill-head"><div class="skill-icon">04</div><h3>Developer workflow</h3></div><p>Building, versioning, debugging and improving applications.</p><div class="tag-list"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Debugging</span><span class="tag">Browser DevTools</span></div></article>
+          <article class="surface skill"><div class="skill-head"><div class="skill-icon">05</div><h3>Product execution</h3></div><p>Thinking through the experience beyond individual code components.</p><div class="tag-list"><span class="tag">UI fundamentals</span><span class="tag">Problem-solving</span><span class="tag">Planning</span><span class="tag">Communication</span><span class="tag">Collaboration</span></div></article>
+          <article class="surface skill"><div class="skill-head"><div class="skill-icon">06</div><h3>Areas I’m exploring</h3></div><p>Domains that connect my technical interests with practical needs.</p><div class="tag-list"><span class="tag">AI-assisted systems</span><span class="tag">Mental-health technology</span><span class="tag">Full-stack apps</span><span class="tag">Retail systems</span></div></article>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="projects">
+    <section class="section" id="work">
       <div class="container">
         <div class="section-head">
-          <div><div class="section-kicker">03 / Selected work</div><h2>Projects & products</h2></div>
-          <p class="section-intro">A selection of product work and development exercises. Open the live projects to explore the current implementation.</p>
+          <div><div class="kicker">03 / Selected work</div><h2>Products, experiments<br>and practical builds.</h2></div>
+          <p class="intro">A curated selection of work. Each project is presented with its purpose, implementation areas and a direct path to explore it.</p>
         </div>
-        <div class="projects-grid">
-          <article class="project">
-            <div class="project-main">
-              <div class="project-top"><span class="project-type">Flagship product</span><span class="status">Working beta</span></div>
+        <div class="work-grid">
+          <article class="surface work work-feature">
+            <div class="work-body">
+              <div class="work-top"><span class="work-type">Flagship product · MindSync</span><span class="badge">Working beta</span></div>
               <h3>MindSync AI</h3>
-              <p>An AI-assisted mental-health screening and self-reflection platform designed to help users understand screening results and consider appropriate next steps. It is a screening-support tool, not a clinical diagnosis or replacement for professional care.</p>
+              <p>An AI-assisted mental-health screening and self-reflection platform designed to help users understand screening results and consider appropriate next steps. MindSync is a screening-support tool, not a clinical diagnosis or a substitute for qualified professional care.</p>
               <ul>
-                <li>Screening modules include PHQ-9, GAD-7, PSS-10 and Y-BOCS.</li>
-                <li>Assessment journeys, account flows, results and evaluation reporting.</li>
+                <li>Structured screening modules including PHQ-9, GAD-7, PSS-10 and Y-BOCS.</li>
+                <li>User authentication, assessment journeys, results and evaluation reporting.</li>
                 <li>FastAPI backend with MongoDB-backed application services.</li>
-                <li>Multilingual interface and downloadable reports.</li>
+                <li>Multilingual interface, early-access workflow and downloadable reports.</li>
               </ul>
-              <div class="profile-tags"><span class="tag">React</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">MongoDB</span><span class="tag">Vercel</span></div>
+              <div class="tag-list" style="margin-top:17px"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">MongoDB</span><span class="tag">Vercel</span></div>
             </div>
-            <div class="project-footer"><a class="btn btn-primary btn-small" href="https://mindsync-ai-orpin.vercel.app/" target="_blank" rel="noopener noreferrer">Open MindSync ↗</a><a class="btn btn-secondary btn-small" href="https://mindsync-ai-orpin.vercel.app/early-access" target="_blank" rel="noopener noreferrer">Early access ↗</a><a class="btn btn-secondary btn-small" href="https://drive.google.com/file/d/1sm7v9eC3oI-3pOtNxDLyfD8D-gyO2MOR/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Demo video ↗</a></div>
+            <aside class="feature-aside">
+              <div><div class="mini-label">A product built around a meaningful problem</div><h4>Technology with a human purpose.</h4><p>Explore the live beta, review the product journey or visit the early-access page.</p></div>
+              <div class="tag-list"><a class="btn btn-gold" href="https://mindsync-ai-orpin.vercel.app/" target="_blank" rel="noopener noreferrer">Explore MindSync ↗</a><a class="btn btn-outline" href="https://mindsync-ai-orpin.vercel.app/early-access" target="_blank" rel="noopener noreferrer">Early access ↗</a><a class="btn btn-outline" href="https://drive.google.com/file/d/1sm7v9eC3oI-3pOtNxDLyfD8D-gyO2MOR/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Demo video ↗</a></div>
+            </aside>
           </article>
 
-          <article class="project">
-            <div class="project-main">
-              <div class="project-top"><span class="project-type">Learning initiative</span><span class="status">Live website</span></div>
+          <article class="surface work">
+            <div class="work-body">
+              <div class="work-top"><span class="work-type">Learning & entrepreneurship</span><span class="badge">Live initiative</span></div>
               <h3>Camp Nexus</h3>
-              <p>A student-focused learning and training initiative built around technology, marketing, management, and practical project-based exposure.</p>
-              <ul>
-                <li>Digital presence for learning and training opportunities.</li>
-                <li>Project-oriented experiences for students.</li>
-                <li>Community and opportunity discovery focus.</li>
-              </ul>
-              <div class="profile-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Education</span></div>
+              <p>A student-focused learning and training initiative built around technology, marketing, management and practical project-based exposure.</p>
+              <ul><li>Digital platform for learning and training opportunities.</li><li>Project-oriented experiences and student engagement.</li><li>Community, skill development and opportunity discovery.</li></ul>
+              <div class="tag-list" style="margin-top:17px"><span class="tag">Web development</span><span class="tag">Education</span><span class="tag">Community</span></div>
             </div>
-            <div class="project-footer"><a class="btn btn-primary btn-small" href="https://campnexus-in.vercel.app/nexus.html" target="_blank" rel="noopener noreferrer">Visit Camp Nexus ↗</a><a class="btn btn-secondary btn-small" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            <div class="work-footer"><a class="btn btn-green btn-sm" href="https://campnexus-in.vercel.app/nexus.html" target="_blank" rel="noopener noreferrer">Visit Camp Nexus ↗</a><a class="btn btn-soft btn-sm" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
           </article>
 
-          <article class="project">
-            <div class="project-main">
-              <div class="project-top"><span class="project-type">Retail technology</span><span class="status">Development concept</span></div>
+          <article class="surface work">
+            <div class="work-body">
+              <div class="work-top"><span class="work-type">Retail technology</span><span class="badge">Development concept</span></div>
               <h3>Nexwear Retail POS</h3>
-              <p>A retail operations application concept for bringing clothing inventory, point-of-sale workflows, and order records into one practical interface.</p>
-              <ul>
-                <li>Product and inventory management workflows.</li>
-                <li>POS-oriented sales and order handling.</li>
-                <li>Product search, category and stock visibility.</li>
-                <li>Invoice generation and structured data storage.</li>
-              </ul>
-              <div class="profile-tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span class="tag">JSON</span></div>
+              <p>A retail operations application concept for bringing clothing inventory, point-of-sale workflows and order records into one practical interface.</p>
+              <ul><li>Product and inventory management workflows.</li><li>POS-oriented sales and order handling.</li><li>Product search, category and stock visibility.</li><li>Invoice generation and structured data storage.</li></ul>
+              <div class="tag-list" style="margin-top:17px"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span class="tag">JSON</span></div>
             </div>
-            <div class="project-footer"><a class="btn btn-secondary btn-small" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div>
+            <div class="work-footer"><a class="btn btn-soft btn-sm" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div>
           </article>
 
-          <article class="project">
-            <div class="project-main">
-              <div class="project-top"><span class="project-type">Web application</span><span class="status">Live demo</span></div>
+          <article class="surface work">
+            <div class="work-body">
+              <div class="work-top"><span class="work-type">Web application</span><span class="badge">Live demo</span></div>
               <h3>Contact Management System</h3>
-              <p>A browser-based contact management project demonstrating CRUD operations and structured record handling.</p>
-              <ul><li>Create, view, update and delete contact records.</li><li>Practice with interface state and data handling.</li></ul>
-              <div class="profile-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">CRUD</span></div>
+              <p>A browser-based contact management project demonstrating CRUD operations, structured record handling and practical interface logic.</p>
+              <ul><li>Create, view, update and delete contact records.</li><li>Practice with application state and data handling.</li></ul>
+              <div class="tag-list" style="margin-top:17px"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">CRUD</span></div>
             </div>
-            <div class="project-footer"><a class="btn btn-primary btn-small" href="https://cms-five-ashen.vercel.app/scms.html" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="btn btn-secondary btn-small" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            <div class="work-footer"><a class="btn btn-green btn-sm" href="https://cms-five-ashen.vercel.app/scms.html" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="btn btn-soft btn-sm" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
           </article>
 
-          <article class="project">
-            <div class="project-main">
-              <div class="project-top"><span class="project-type">JavaScript project</span><span class="status">Live demo</span></div>
+          <article class="surface work">
+            <div class="work-body">
+              <div class="work-top"><span class="work-type">JavaScript project</span><span class="badge">Live demo</span></div>
               <h3>Guessing Game</h3>
               <p>An interactive number-guessing game built to practise DOM manipulation, event handling, input validation and basic application logic.</p>
-              <div class="profile-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="tag-list" style="margin-top:17px"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
             </div>
-            <div class="project-footer"><a class="btn btn-primary btn-small" href="https://guess-game-lyart.vercel.app/guessing_game.html" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="btn btn-secondary btn-small" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            <div class="work-footer"><a class="btn btn-green btn-sm" href="https://guess-game-lyart.vercel.app/guessing_game.html" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="btn btn-soft btn-sm" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
           </article>
 
-          <article class="project">
-            <div class="project-main">
-              <div class="project-top"><span class="project-type">JavaScript utility</span><span class="status">Live demo</span></div>
+          <article class="surface work">
+            <div class="work-body">
+              <div class="work-top"><span class="work-type">JavaScript utility</span><span class="badge">Live demo</span></div>
               <h3>Temperature Converter</h3>
-              <p>A small browser utility for converting temperature values between units, demonstrating form handling and JavaScript calculations.</p>
-              <div class="profile-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <p>A browser utility for converting temperature values between units, demonstrating form handling and JavaScript calculations.</p>
+              <div class="tag-list" style="margin-top:17px"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
             </div>
-            <div class="project-footer"><a class="btn btn-primary btn-small" href="https://temperature-converter-frontend-proj.vercel.app/temp_converter.html" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="btn btn-secondary btn-small" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            <div class="work-footer"><a class="btn btn-green btn-sm" href="https://temperature-converter-frontend-proj.vercel.app/temp_converter.html" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a class="btn btn-soft btn-sm" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="experience">
+    <section class="section" id="journey">
       <div class="container">
         <div class="section-head">
-          <div><div class="section-kicker">04 / Education & experience</div><h2>My journey so far</h2></div>
-          <p class="section-intro">Academic background and practical training, presented with dates and details from the supplied portfolio.</p>
+          <div><div class="kicker">04 / Education & experience</div><h2>The journey behind<br>the learning.</h2></div>
+          <p class="intro">Academic foundations and practical training experiences that have shaped my development journey.</p>
         </div>
         <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">Aug 2023 – Present</div>
-            <div><h3>B.Tech – Computer Science Engineering</h3><p class="sub">Aryan College of Engineering, Rajpura, Punjab</p><p>Final-year undergraduate study focused on computer science fundamentals, problem-solving, and practical software development.</p></div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Oct 2025</div>
-            <div><h3>Software Development Intern · Prodigy InfoTech</h3><p class="sub">1 month · 1–31 October 2025</p><p>Practical web-development tasks involving CRUD workflows and JavaScript logic-building exercises.</p><p><a href="https://mail.google.com/mail/u/2?ui=2&ik=6949b7f4f9&attid=0.1&permmsgid=msg-f:1849696340743177577&th=19ab710594564569&view=att&zw&disp=inline" target="_blank" rel="noopener noreferrer">View certificate ↗</a></p></div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Mar 2025</div>
-            <div><h3>Python Programming Intern · CodSoft</h3><p class="sub">1 month · 1–31 March 2025</p><p>Python programming exercises involving foundational programming, data handling, and logic-building projects.</p><p><a href="https://alishajabeen67-dot-elite-magpie-462511-c4.uc.r.appspot.com/?c=18Rqab4INtAVD6k5ZKOgt7iaxfcTaivaudCGSbspUaUA&q=82281577&r=19d548cfb41d3090&z=1775240018861&o=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1UC8Z2g9T6M7_ObYFYPKed_kvnH4w_UEb%2Fview%3Fusp%3Ddrivesdk" target="_blank" rel="noopener noreferrer">View certificate ↗</a></p></div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Apr 2022 – Mar 2023</div>
-            <div><h3>Higher Secondary – Physics, Chemistry & Mathematics</h3><p class="sub">Jawahar Navodaya Vidyalaya, Pathankot, Punjab</p><p>Completed higher secondary education in the PCM stream.</p></div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Apr 2020 – Mar 2021</div>
-            <div><h3>Secondary Education</h3><p class="sub">Jawahar Navodaya Vidyalaya, Pathankot, Punjab</p><p>Completed secondary schooling.</p></div>
-          </article>
+          <article class="surface timeline-item"><div class="timeline-date">Aug 2023 — Present</div><div><h3>B.Tech · Computer Science Engineering</h3><p class="sub">Aryan College of Engineering, Rajpura, Punjab</p><p>Final-year undergraduate study focused on computer science fundamentals, problem-solving and practical software development.</p></div></article>
+          <article class="surface timeline-item"><div class="timeline-date">Oct 2025</div><div><h3>Software Development Intern · Prodigy InfoTech</h3><p class="sub">One month · 1–31 October 2025</p><p>Practical web-development tasks involving CRUD workflows and JavaScript logic-building exercises. <a href="https://mail.google.com/mail/u/2?ui=2&ik=6949b7f4f9&attid=0.1&permmsgid=msg-f:1849696340743177577&th=19ab710594564569&view=att&zw&disp=inline" target="_blank" rel="noopener noreferrer">View certificate ↗</a></p></div></article>
+          <article class="surface timeline-item"><div class="timeline-date">Mar 2025</div><div><h3>Python Programming Intern · CodSoft</h3><p class="sub">One month · 1–31 March 2025</p><p>Python programming exercises involving foundational programming, data handling and logic-building projects. <a href="https://alishajabeen67-dot-elite-magpie-462511-c4.uc.r.appspot.com/?c=18Rqab4INtAVD6k5ZKOgt7iaxfcTaivaudCGSbspUaUA&q=82281577&r=19d548cfb41d3090&z=1775240018861&o=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1UC8Z2g9T6M7_ObYFYPKed_kvnH4w_UEb%2Fview%3Fusp%3Ddrivesdk" target="_blank" rel="noopener noreferrer">View certificate ↗</a></p></div></article>
+          <article class="surface timeline-item"><div class="timeline-date">Apr 2022 — Mar 2023</div><div><h3>Higher Secondary · Physics, Chemistry & Mathematics</h3><p class="sub">Jawahar Navodaya Vidyalaya, Pathankot, Punjab</p><p>Completed higher secondary education in the PCM stream.</p></div></article>
+          <article class="surface timeline-item"><div class="timeline-date">Apr 2020 — Mar 2021</div><div><h3>Secondary Education</h3><p class="sub">Jawahar Navodaya Vidyalaya, Pathankot, Punjab</p><p>Completed secondary schooling.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="certifications">
+    <section class="section" id="certifications">
       <div class="container">
         <div class="section-head">
-          <div><div class="section-kicker">05 / Certifications</div><h2>Additional learning</h2></div>
-          <p class="section-intro">Courses and credentials listed in the source portfolio.</p>
+          <div><div class="kicker">05 / Continued learning</div><h2>Courses & credentials.</h2></div>
+          <p class="intro">Additional learning that supports my interest in software development and responsible AI.</p>
         </div>
         <div class="cert-grid">
-          <article class="cert"><h3>Ethical Consideration for Generative AI</h3><p>IBM SkillsBuild · Responsible use of generative AI systems.</p></article>
-          <article class="cert"><h3>Retrieval-Augmented Generation</h3><p>IBM SkillsBuild · Introductory exposure to RAG concepts and AI-assisted retrieval.</p></article>
-          <article class="cert"><h3>CSS</h3><p>STP Computer Education · Web styling fundamentals.</p></article>
-          <article class="cert"><h3>Basic Computer</h3><p>STP Computer Education · Foundational computer knowledge.</p></article>
+          <article class="surface cert"><h3>Ethical Consideration for Generative AI</h3><p>IBM SkillsBuild · Responsible and ethical use of generative AI systems.</p></article>
+          <article class="surface cert"><h3>Retrieval-Augmented Generation</h3><p>IBM SkillsBuild · Introductory exposure to RAG concepts and AI-assisted information retrieval.</p></article>
+          <article class="surface cert"><h3>CSS</h3><p>STP Computer Education · Web styling fundamentals and UI presentation.</p></article>
+          <article class="surface cert"><h3>Basic Computer</h3><p>STP Computer Education · Foundational computer knowledge.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="contact">
+    <section class="section contact-section" id="contact">
       <div class="container">
-        <div class="contact-box">
-          <div>
-            <div class="section-kicker">06 / Contact</div>
-            <h2>Let’s build something useful.</h2>
-            <p>I’m open to software development opportunities, internships, project collaborations, and professional conversations. Feel free to reach out.</p>
-            <div class="contact-links">
-              <a class="btn btn-primary" href="mailto:parveshloona1231@gmail.com">Email me ↗</a>
-              <a class="btn btn-secondary" href="https://www.linkedin.com/in/parvesh-kumar-4322901b7/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-              <a class="btn btn-secondary" href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <div class="section-head">
+          <div><div class="kicker">06 / Start a conversation</div><h2>Have an opportunity<br>or an idea in mind?</h2></div>
+          <p class="intro">Choose a few options below. I’ll prepare a complete, professional email for you — no need to write the message from scratch.</p>
+        </div>
+        <div class="contact-layout">
+          <aside class="contact-info">
+            <h3>Let’s make the first step easy.</h3>
+            <p>Whether you’re reaching out about a role, internship, product collaboration, project, or simply want to connect, use the guided form. The message is generated from your selections and opens in your email app for review.</p>
+            <div class="info-line">Direct email<br><a href="mailto:parveshloona1231@gmail.com">parveshloona1231@gmail.com</a></div>
+            <div class="info-line">Professional profiles<br><a href="https://www.linkedin.com/in/parvesh-kumar-4322901b7/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> &nbsp;·&nbsp; <a href="https://github.com/parv359904" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            <div class="info-line">Location<br>Kathua, Jammu & Kashmir, India</div>
+          </aside>
+
+          <form class="form-card" id="contactForm">
+            <div class="form-heading"><div><h3>Quick enquiry builder</h3><p>Select the options that best describe your enquiry.</p></div><span class="form-step">NO LONG MESSAGE NEEDED</span></div>
+            <div class="form-grid">
+              <div class="field"><label for="purpose">I’m contacting you about</label><select id="purpose" required>
+                <option value="">Choose an enquiry type</option>
+                <option>Job opportunity</option><option>Internship opportunity</option><option>Freelance / paid project</option><option>Technical collaboration</option><option>MindSync feedback or partnership</option><option>Camp Nexus collaboration</option><option>Startup / business discussion</option><option>Mentorship or career guidance</option><option>General professional connection</option>
+              </select></div>
+              <div class="field"><label for="relationship">I’m reaching out as</label><select id="relationship" required>
+                <option value="">Select your role</option><option>Recruiter / HR professional</option><option>Founder / Business owner</option><option>Hiring manager</option><option>Developer / Technical professional</option><option>Student</option><option>Potential client</option><option>Mentor / Educator</option><option>Other professional</option>
+              </select></div>
+              <div class="field"><label for="name">Your name <span class="helper">(optional)</span></label><input id="name" type="text" autocomplete="name" placeholder="Your name"></div>
+              <div class="field"><label for="senderEmail">Your email <span class="helper">(recommended)</span></label><input id="senderEmail" type="email" autocomplete="email" placeholder="you@company.com"></div>
+              <div class="field"><label for="organisation">Company / organisation</label><input id="organisation" type="text" autocomplete="organization" placeholder="Optional"></div>
+              <div class="field"><label for="area">Relevant area</label><select id="area">
+                <option>Not specified</option><option>Software development</option><option>Frontend / React</option><option>Python / Backend</option><option>AI / Machine Learning</option><option>Product development</option><option>Education / Training</option><option>Retail technology</option><option>Other</option>
+              </select></div>
+              <div class="field"><label for="workMode">Preferred work arrangement</label><select id="workMode">
+                <option>Open to discussion</option><option>Remote</option><option>Hybrid</option><option>On-site</option><option>Project-based</option>
+              </select></div>
+              <div class="field"><label for="timeline">Expected timeline</label><select id="timeline">
+                <option>Flexible / to be discussed</option><option>Immediate</option><option>Within 2 weeks</option><option>Within a month</option><option>Next 2–3 months</option><option>Long-term discussion</option>
+              </select></div>
+              <div class="field full"><label for="detail">Anything specific to include? <span class="helper">(optional)</span></label><select id="detail">
+                <option>No additional details</option><option>Please share your resume and profile</option><option>Let’s schedule an introductory call</option><option>Please share relevant project details</option><option>I would like to discuss MindSync</option><option>I would like to discuss Camp Nexus</option><option>I have a detailed brief to share separately</option>
+              </select></div>
             </div>
-          </div>
-          <a class="btn btn-secondary" href="https://drive.google.com/file/d/1t04kA5gA4Vh7HMFeIeTOKaLeL3OE2rGd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Open resume ↗</a>
+            <div class="generated">
+              <div class="generated-head"><strong>EMAIL PREVIEW</strong><span class="helper">Auto-generated · editable by your email app</span></div>
+              <p id="preview">Choose an enquiry type and role above to generate a professional email.</p>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-green" type="submit">Prepare email ↗</button>
+              <button class="btn btn-soft" type="button" id="copyBtn">Copy email text</button>
+              <button class="btn btn-soft" type="reset">Reset</button>
+            </div>
+            <p class="privacy">Your selections are used only to prepare the email. Nothing is sent automatically; your email application opens so you can review and send it.</p>
+          </form>
         </div>
       </div>
     </section>
@@ -400,24 +458,103 @@
 
   <footer>
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Parvesh Kumar</span>
-      <span>Designed with clarity. Built with code.</span>
+      <span>© <span id="year"></span> <strong>Parvesh Kumar</strong>. All rights reserved.</span>
+      <span>Built with clarity, curiosity and code.</span>
       <a href="#home">Back to top ↑</a>
     </div>
   </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', () => {
-      const open = mobileMenu.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', String(open));
+    const RECEIVER = "parveshloona1231@gmail.com";
+    const form = document.getElementById("contactForm");
+    const ids = ["purpose","relationship","name","senderEmail","organisation","area","workMode","timeline","detail"];
+    const el = id => document.getElementById(id);
+    const value = id => (el(id).value || "").trim();
+
+    function makeEmail(){
+      const purpose = value("purpose") || "[Enquiry type]";
+      const relationship = value("relationship") || "[Your role]";
+      const name = value("name") || "A professional contact";
+      const senderEmail = value("senderEmail") || "Not provided";
+      const organisation = value("organisation") || "Not specified";
+      const area = value("area") || "Not specified";
+      const workMode = value("workMode") || "Open to discussion";
+      const timeline = value("timeline") || "Flexible / to be discussed";
+      const detail = value("detail") || "No additional details";
+      const subject = `${purpose} | ${name}`;
+      const body = `Hello Parvesh,
+
+I hope you are doing well.
+
+I am reaching out regarding: ${purpose}.
+
+A little about me:
+Name: ${name}
+Role: ${relationship}
+Organisation: ${organisation}
+Reply email: ${senderEmail}
+
+Enquiry details:
+Area of interest: ${area}
+Preferred arrangement: ${workMode}
+Expected timeline: ${timeline}
+Additional note: ${detail}
+
+I would be glad to discuss this further. Please let me know a suitable next step.
+
+Best regards,
+${name}`;
+      return {subject,body};
+    }
+    function updatePreview(){
+      const {subject,body} = makeEmail();
+      el("preview").textContent = `Subject: ${subject}\n\n${body}`;
+    }
+    ids.forEach(id => el(id).addEventListener("input",updatePreview));
+    form.addEventListener("change",updatePreview);
+    form.addEventListener("submit",e=>{
+      e.preventDefault();
+      if(!value("purpose") || !value("relationship")){
+        showToast("Please choose the enquiry type and your role.");
+        (!value("purpose") ? el("purpose") : el("relationship")).focus();
+        return;
+      }
+      const {subject,body} = makeEmail();
+      const url = `mailto:${RECEIVER}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = url;
     });
-    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
+    el("copyBtn").addEventListener("click",async()=>{
+      const {subject,body} = makeEmail();
+      const text = `To: ${RECEIVER}\nSubject: ${subject}\n\n${body}`;
+      try{
+        await navigator.clipboard.writeText(text);
+        showToast("Email text copied.");
+      }catch(err){
+        const temp = document.createElement("textarea");
+        temp.value = text;document.body.appendChild(temp);temp.select();
+        document.execCommand("copy");temp.remove();showToast("Email text copied.");
+      }
+    });
+    form.addEventListener("reset",()=>setTimeout(updatePreview,0));
+    function showToast(message){
+      const toast=el("toast");toast.textContent=message;toast.classList.add("show");
+      setTimeout(()=>toast.classList.remove("show"),2400);
+    }
+    const menuBtn=el("menuBtn"),mobile=el("mobileMenu");
+    menuBtn.addEventListener("click",()=>{
+      const open=mobile.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded",String(open));
+    });
+    mobile.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
+      mobile.classList.remove("open");menuBtn.setAttribute("aria-expanded","false");
     }));
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent=new Date().getFullYear();
+    window.addEventListener("scroll",()=>{
+      const max=document.documentElement.scrollHeight-window.innerHeight;
+      el("progress").style.width=(max>0?window.scrollY/max*100:0)+"%";
+    },{passive:true});
+    updatePreview();
   </script>
 </body>
 </html>
